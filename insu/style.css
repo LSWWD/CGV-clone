@@ -1,3 +1,10 @@
+@import "reset.css";
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .main__header {
   display: flex;
   background-color: wheat;
@@ -6,7 +13,7 @@
   height: 160px;
 }
 
-.status-bar {
+.main__heaer__status-bar {
   display: flex;
   background-color: thistle;
   align-items: center;
