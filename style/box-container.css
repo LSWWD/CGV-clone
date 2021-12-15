@@ -5,7 +5,7 @@
   height: 272px;
   justify-content: space-between;
 }
-.evnet__box__container__content {
+.event__box__container__content {
   width: 310px;
   height: 272px;
   background-color: rosybrown;
@@ -19,8 +19,27 @@
   background-color: beige;
 }
 
+.event__box__container__content--img img {
+  width: 310px;
+  height: 210px;
+  cursor: pointer;
+}
+
+.event__box__container__content--img img:hover {
+  animation: makeBig 1s both;
+}
+
 .event__box__container__content--text {
   background-color: gray;
   width: 310px;
-  height: 62px;
+  height: 50px;
+}
+
+@keyframes makeBig {
+  form {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }

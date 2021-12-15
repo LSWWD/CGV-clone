@@ -39,3 +39,7 @@
   top: 154px;
   right: -20px;
 }
+
+.event__box > button {
+  cursor: pointer;
+}
