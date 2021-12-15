@@ -1,0 +1,26 @@
+.event__box__container {
+  background-color: blueviolet;
+  display: flex;
+  width: 980px;
+  height: 272px;
+  justify-content: space-between;
+}
+.evnet__box__container__content {
+  width: 310px;
+  height: 272px;
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
+}
+
+.event__box__container__content--img {
+  width: 310px;
+  height: 210px;
+  background-color: beige;
+}
+
+.event__box__container__content--text {
+  background-color: gray;
+  width: 310px;
+  height: 62px;
+}

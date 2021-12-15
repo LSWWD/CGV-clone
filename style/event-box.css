@@ -1,0 +1,41 @@
+.event {
+  background-color: wheat;
+  width: 100%;
+  height: 394px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 980px;
+  height: 328px;
+  background-color: aquamarine;
+  justify-content: space-between;
+}
+
+.event__box__btn {
+  background-color: #cdcdcd;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: #4d4d4d;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event__box > button:nth-child(1) {
+  position: absolute;
+  top: 154px;
+  left: -20px;
+}
+.event__box > button:nth-child(2) {
+  position: absolute;
+  top: 154px;
+  right: -20px;
+}

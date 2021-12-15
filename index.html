@@ -9,9 +9,23 @@
   <body>
     <div class="event">
       <div class="event__box">
-        <button class="btn--left"><</button>
-        <button class="btn--right">></button>
-        <div class="event__box__header"><span>Event</span></div>
+        <button class="event__box__btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="event__box__btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="event__box__header">
+          <div class="event__box__header__text"><span>EVENT</span></div>
+          <div class="event__box__header__btn">
+            <button class="header__btn--play">
+              <i class="fas fa-play"></i>
+            </button>
+            <button class="header__btn--text">
+              <span>전체보기</span><i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
         <div class="event__box__container">
           <div class="evnet__box__container__content">
             <div class="event__box__container__content--img"></div>
@@ -29,4 +43,8 @@
       </div>
     </div>
   </body>
+  <script
+    src="https://kit.fontawesome.com/c4c0c87d90.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

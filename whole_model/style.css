@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "/style/event-box.css";
 
 h1 {
   font-size: 2rem;
