@@ -1,0 +1,49 @@
+.main__header {
+  display: flex;
+  background-color: wheat;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 160px;
+}
+
+.status-bar {
+  display: flex;
+  background-color: thistle;
+  align-items: center;
+  height: 50px;
+}
+
+.main__screen__movie {
+  background-color: aquamarine;
+  height: 500px;
+}
+
+.main__screen__moviechart {
+  background-color: rgb(224, 206, 122);
+  height: 461px;
+}
+
+.main__event--list {
+  background-color: rosybrown;
+  height: 394px;
+}
+
+.main__cinema--list {
+  background-color: rgb(148, 148, 196);
+  height: 400px;
+}
+
+.main__goods--block {
+  background-color: burlywood;
+  height: 436px;
+}
+
+.main__notice--block {
+  background-color: rgb(218, 123, 123);
+  height: 426px;
+}
+
+.main__footer--copyright {
+  background-color: blanchedalmond;
+  height: 446px;
+}
