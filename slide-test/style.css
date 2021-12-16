@@ -1,0 +1,41 @@
+@import "reset.css";
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.box-container {
+  background-color: aquamarine;
+  width: 980px;
+  height: 272px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.box-slide {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  transition: margin-left 0.5s ease-in;
+}
+
+.box {
+  border: 1px solid black;
+  background-color: rgb(163, 173, 68);
+  text-align: center;
+}
+
+.left {
+  position: absolute;
+  left: 430px;
+  top: 100px;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+}
+.right {
+  position: absolute;
+  right: 430px;
+  top: 100px;
+}
