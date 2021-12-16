@@ -1,5 +1,4 @@
 .event__box__container {
-  background-color: blueviolet;
   display: flex;
   width: 980px;
   height: 272px;
@@ -8,7 +7,6 @@
 .event__box__container__content {
   width: 310px;
   height: 272px;
-  background-color: rosybrown;
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +14,6 @@
 .event__box__container__content--img {
   width: 310px;
   height: 210px;
-  background-color: beige;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
@@ -33,7 +30,6 @@
 }
 
 .event__box__container__content--text {
-  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,5 +1,4 @@
 .event {
-  background-color: wheat;
   width: 100%;
   height: 394px;
   display: flex;
@@ -13,31 +12,32 @@
   flex-direction: column;
   width: 980px;
   height: 328px;
-  background-color: aquamarine;
   justify-content: space-between;
 }
 
 .event__box__btn {
-  background-color: #cdcdcd;
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  color: #4d4d4d;
-  opacity: 0.5;
+  color: #727272;
+  opacity: 0.8;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 1px 1.5px 1.5px rgb(214, 214, 214);
 }
 
 .event__box > button:nth-child(1) {
   position: absolute;
   top: 154px;
   left: -20px;
+  z-index: 1;
 }
 .event__box > button:nth-child(2) {
   position: absolute;
   top: 154px;
   right: -20px;
+  z-index: 1;
 }
 
 .event__box > button {

@@ -1,31 +1,28 @@
 .event__box__header {
   width: 980px;
   height: 36px;
-  background-color: rgb(145, 145, 167);
   display: flex;
   justify-content: space-between;
 }
 .event__box__header__text {
   width: 480px;
   height: 36px;
-  background-color: aliceblue;
+  margin-left: 5px;
 }
 
 .event__box__header__btn {
   width: 480px;
   height: 36px;
-  background-color: rgb(189, 118, 171);
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .header__btn--play {
-  background-color: white;
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  border: 1px solid grey;
+  border: 1px solid rgb(209, 209, 209);
   opacity: 0.8;
   display: flex;
   align-items: center;
@@ -33,30 +30,23 @@
   padding-top: 2px;
   padding-left: 2px;
   cursor: pointer;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgb(240, 240, 240);
 }
 
 .header__btn--play > i {
   font-size: 0.8rem;
-  opacity: 0.4;
+  opacity: 0.3;
+  margin-bottom: 1px;
+  margin-left: 1px;
 }
 
 .header__btn--text {
-  background-color: white;
   width: 100px;
   height: 30px;
   border-radius: 15px;
-  border: 1px solid grey;
-  opacity: 0.8;
-  margin-left: 4px;
-  font-size: 13px;
-}
-
-.header__btn--text {
+  border: 1px solid rgb(209, 209, 209);
   background-color: white;
-  width: 100px;
-  height: 30px;
-  border-radius: 15px;
-  border: 1px solid grey;
   opacity: 0.8;
   margin-left: 4px;
   font-size: 13px;
@@ -64,6 +54,7 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgb(240, 240, 240);
 }
 
 .header__btn--text > span {
