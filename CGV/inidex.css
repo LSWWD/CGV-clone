@@ -1,0 +1,68 @@
+@import "reset.css";
+
+.body {
+  height: 100vh;
+}
+
+.menu {
+  background-color: rgb(43, 226, 43);
+  height: 45px;
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.whole {
+  width: 100px;
+  height: 30px;
+}
+
+.suite-picture {
+  background-color: darkgreen;
+  height: 263px;
+  width: 500px;
+}
+.special {
+  width: 71px;
+  height: 36px;
+}
+
+.content {
+  background-color: rgb(150, 87, 150);
+  width: 980px;
+  height: 263px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.type {
+  background-color: coral;
+  width: 440px;
+  height: 263px;
+  display: flex;
+  flex-direction: column;
+}
+
+.suite-cinema {
+  background-color: darkkhaki;
+  width: 438px;
+  height: 63px;
+}
+
+.sky-box {
+  background-color: darkmagenta;
+  width: 438px;
+  height: 63px;
+}
+
+.cine-de-chef {
+  background-color: darkolivegreen;
+  width: 438px;
+  height: 63px;
+}
+
+.DX {
+  background-color: darkturquoise;
+  width: 438px;
+  height: 63px;
+}

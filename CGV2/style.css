@@ -1,0 +1,233 @@
+.whole {
+  height: 100vh;
+  width: 100%;
+  height: 436px;
+  background-color: rgb(223, 62, 94);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-whole {
+  width: 980px;
+  height: 376px;
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a {
+  width: 310px;
+  height: 376px;
+  background-color: rgb(192, 209, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.b {
+  width: 310px;
+  height: 376px;
+  background-color: rgb(71, 49, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c {
+  width: 310px;
+  height: 376px;
+  background-color: rgb(62, 138, 128);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner-box1 {
+  width: 270px;
+  height: 29px;
+  background-color: bisque;
+}
+.ABOX {
+  width: 270px;
+  height: 76px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+.BBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(61, 141, 128);
+  display: flex;
+  justify-content: space-between;
+}
+.CBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(148, 39, 66);
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-box2 {
+  width: 270px;
+  height: 29px;
+  background-color: rgb(190, 127, 49);
+}
+.DBOX {
+  width: 270px;
+  height: 76px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+.EBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(76, 135, 170);
+  display: flex;
+  justify-content: space-between;
+}
+.FBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(31, 146, 60);
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-box3 {
+  width: 270px;
+  height: 29px;
+  background-color: rgb(78, 209, 17);
+}
+.GBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(168, 33, 85);
+  display: flex;
+  justify-content: space-between;
+}
+.HBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(59, 119, 129);
+  display: flex;
+  justify-content: space-between;
+}
+.IBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(226, 198, 43);
+  display: flex;
+  justify-content: space-between;
+}
+
+.JBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(53, 194, 175);
+  justify-content: space-between;
+  display: flex;
+}
+.KBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(41, 33, 163);
+  justify-content: space-between;
+  display: flex;
+}
+.LBOX {
+  width: 270px;
+  height: 76px;
+  background-color: rgb(41, 33, 163);
+  justify-content: space-between;
+  display: flex;
+}
+.more-see1 {
+  width: 65px;
+  height: 24px;
+}
+.more-see2 {
+  width: 65px;
+  height: 24px;
+}
+.more-see3 {
+  width: 65px;
+  height: 24px;
+}
+.PICTURE1 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE1 > img {
+  width: 75px;
+  height: 76px;
+}
+
+.PICTURE2 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE2 > img {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE3 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE3 > img {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE4 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE4 > img {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE5 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE5 > img {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE6 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE6 > img {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE7 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE7 > img {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE8 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE8 > img {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE9 {
+  width: 75px;
+  height: 76px;
+}
+.PICTURE9 > img {
+  width: 75px;
+  height: 76px;
+}
