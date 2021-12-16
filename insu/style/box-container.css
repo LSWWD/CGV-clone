@@ -17,6 +17,9 @@
   width: 310px;
   height: 210px;
   background-color: beige;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .event__box__container__content--img img {
@@ -30,9 +33,24 @@
 }
 
 .event__box__container__content--text {
-  background-color: gray;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 310px;
-  height: 50px;
+  height: 70px;
+}
+.event__box__container__content--text > span {
+  padding: 4px;
+}
+
+.event__box__container__content--text > span:nth-child(1) {
+  font-weight: bold;
+}
+.event__box__container__content--text > span:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 @keyframes makeBig {
