@@ -63,6 +63,19 @@ const roller = () => {
   console.log(boxIndex);
   boxIndex = boxIndex >= eventBoxes.length ? 0 : boxIndex;
   eventSlide.style.marginLeft = `-${eventContainer.clientWidth * boxIndex}px`;
+
+  // 버튼 활성/비활성화
+  if (boxIndex == 0) {
+    leftBtn.style.visibility = "hidden";
+  } else {
+    leftBtn.style.visibility = "visible";
+  }
+
+  if (boxIndex >= 3) {
+    rightBtn.style.visibility = "hidden";
+  } else {
+    rightBtn.style.visibility = "visible";
+  }
 };
 
 // setInterval로 함수 반복
