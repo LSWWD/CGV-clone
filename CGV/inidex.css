@@ -5,7 +5,7 @@
 }
 
 .menu {
-  background-color: rgb(43, 226, 43);
+  background-color: white;
   height: 45px;
   width: 980px;
   display: flex;
@@ -15,6 +15,14 @@
 .whole {
   width: 100px;
   height: 30px;
+  padding: 4px 32px 4px 15px;
+  font-size: 14px;
+  color: #222;
+  line-height: 1.429em;
+  border: 1px solid #e2e2e2;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 5%);
+  text-align: center;
 }
 
 .suite-picture {
@@ -25,6 +33,12 @@
 .special {
   width: 71px;
   height: 36px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  color: #222;
+  line-height: 1.423em;
+  margin: 0;
 }
 
 .content {
