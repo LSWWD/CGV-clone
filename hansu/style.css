@@ -156,7 +156,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  padding: 28px 26px 17px 28px;
+  padding: 28px 26px 39px 28px;
   border-right: 1px solid #e4e4e4;
 }
 
@@ -217,6 +217,7 @@ h1 {
 .main__notice--service-client {
   margin-bottom: 20px;
 }
+
 .main__notice--service-question a {
   text-decoration: none;
   color: black;
@@ -227,14 +228,15 @@ h1 {
 }
 /* qr박스 */
 .main__notice--qr {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
   padding: 12px 22px 24px 22px;
+}
+
+.app_explain-two {
+  color: #666666;
 }
 /* 고객센터 */
 .main__notice--service-client dl {
@@ -259,6 +261,17 @@ h1 {
 
 .main__notice--img > img {
   border-radius: 10px;
+}
+.main__notice--img {
+  position: relative;
+}
+.fa-play-circle,
+.fa-pause-circle {
+  font-size: 30px;
+  color: #d1d1d1;
+  position: absolute;
+  bottom: 11px;
+  right: 11px;
 }
 
 .main__event--list {
