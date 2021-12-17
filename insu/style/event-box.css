@@ -29,13 +29,13 @@
 
 .event__box > button:nth-child(1) {
   position: absolute;
-  top: 154px;
+  top: 135px;
   left: -20px;
   z-index: 1;
 }
 .event__box > button:nth-child(2) {
   position: absolute;
-  top: 154px;
+  top: 135px;
   right: -20px;
   z-index: 1;
 }

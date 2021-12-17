@@ -18,27 +18,20 @@
   align-items: center;
 }
 
-.header__btn--play {
+.header__btn--stop {
   width: 30px;
   height: 30px;
   border-radius: 15px;
   border: 1px solid rgb(209, 209, 209);
   opacity: 0.8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2px;
-  padding-left: 2px;
   cursor: pointer;
   background-color: white;
   box-shadow: 1px 1px 1px 1px rgb(240, 240, 240);
 }
 
-.header__btn--play > i {
+.header__btn--stop > i {
   font-size: 0.8rem;
   opacity: 0.3;
-  margin-bottom: 1px;
-  margin-left: 1px;
 }
 
 .header__btn--text {
