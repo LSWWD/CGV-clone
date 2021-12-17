@@ -1,186 +1,229 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="https://img.cgv.co.kr/theater_img/favicon.ico" type="image/x-icon">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-  />
-    <title>영화 그 이상의 감동, CGV</title>
-  </head>
-  <body>
-    <header class="main__header">
-      <h1>Header</h1>
-      <div class="main__heaer__status-bar">
-        <h1>Menu</h1>
-      </div>
-    </header>
-    <main class="main__screen">
-      <div class="main__screen__movie">
-        <div class="main__screen__movie--wrap">
-          <div class='main__screen--text'>
-            <h1>해피 뉴 이어</h1>
-            <p>우리에게도 소중한 인연이 찾아올까요?</p>
-            <p>티빙과 극장에서 12월 29일 대공개!</p>
-          </div>
-          <div class='main__screen--btn'>
-            <a href="http://www.cgv.co.kr/movies/detail-view/?midx=85515">상세보기<i class="fas fa-chevron-right"></i></a>
-            <span><i class="far fa-play-circle"></i></span>
-            <span><i class="fas fa-volume-down"></i></span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="https://img.cgv.co.kr/theater_img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <title>영화 그 이상의 감동, CGV</title>
+</head>
+
+<body>
+  <header class="main__header">
+    <h1>Header</h1>
+    <div class="main__heaer__status-bar">
+      <h1>Menu</h1>
+    </div>
+  </header>
+  <main class="main__screen">
+    <div class="main__screen__movie">
+      <div class="main__screen__wrap--text-btn">
+        <div class='main__screen--text'>
+          <h1>해피 뉴 이어</h1>
+          <p>우리에게도 소중한 인연이 찾아올까요?</p>
+          <p>티빙과 극장에서 12월 29일 대공개!</p>
         </div>
-        <div class="main__screen-section" >
-            <video class="main__screen--video" autoplay="autoplay" muted>
-            <source src='./video/happynewyear.mp4' type="video/mp4">
-            </video>
+        <div class='main__screen--btn'>
+          <a href="http://www.cgv.co.kr/movies/detail-view/?midx=85515">상세보기<i class="fas fa-chevron-right"></i></a>
+          <span><i class="far fa-play-circle"></i></span>
+          <span><i class="fas fa-volume-down"></i></span>
         </div>
       </div>
-  
+      <!-- 비디오 -->
+      <div class="main__screen-movie">
+        <!-- autoplay="autoplay" -->
+        <video class="main__screen--video" muted>
+          <source src='./video/happynewyear.mp4' type="video/mp4">
+        </video>
       </div>
-      <!-- 무비차트 -->
-      <div class="main__screen__moviechart">
-        <div class="main__screen__moviechart--container">
-          <!-- 무비차트 네비게이션바 -->
-          <div class="moviechart-nav">
-            <div class="moviechart-header">
-              <h3><a href="#">무비 차트</a></h3>
-              <h3 ><a href="#">상영예정작</a></h3> 
-            </div>  
-            <div><a href="#">전체보기</a>
-            </div>
+    </div>
+
+    </div>
+    <!-- 무비차트 -->
+    <div class="main__screen__moviechart">
+      <div class="main__screen__moviechart--container">
+        <!-- 무비차트 네비게이션바 -->
+        <div class="moviechart-nav">
+          <div class="moviechart-header">
+            <h3><a href="#">무비 차트</a></h3>
+            <h3><a href="#">상영예정작</a></h3>
           </div>
-          <!-- 무비차트 리스트 -->
-          <div class="moviechart-list">
-            <!-- <span><i class="fas fa-chevron-left"></i></span> -->
-            <div class="movies">
-              <img src="./images/movie2.jpg"  width="170" height="230" alt="">
-              <div><i class="fas fa-egg"></i>97%</div>
-              <div> 예매율 93.9%</div>
-            </div> 
-            <div class="movies">
-              <img src="./images/movie2.jpg"  width="170" height="230" alt="">
-              <div><i class="fas fa-egg"></i>97%</div>
-              <div> 예매율 93.9%</div>
-            </div> 
-            <div class="movies">
-              <img src="./images/movie3.jpg"  width="170" height="230" alt="">
-              <div><i class="fas fa-egg"></i>97%</div>
-              <div> 예매율 93.9%</div>
-            </div> 
-            <div class="movies">
-              <img src="./images/movie4.jpg"  width="170" height="230" alt="">
-              <div><i class="fas fa-egg"></i>97%</div>
-              <div> 예매율 93.9%</div>
-            </div>
-            <div class="movies">
-              <img src="./images/movie5.jpg"  width="170" height="230" alt="">
-          
-              <div><i class="fas fa-egg"></i>97%</div>
-              <div> 예매율 93.9%</div>
-            </div>
+          <div class="moviechart-viewall"><a href="#">전체보기</a></div>
+        </div>
+        <!-- 무비차트 리스트 -->
+        <div class="moviechart-list">
+          <!-- <span><i class="fas fa-chevron-left"></i></span> -->
+          <div class="movies">
+            <img src="./images/movie1.jpg" width="170" height="230" alt="">
+            <h3>스파이더맨-노웨이홈</h3>
+            <div><i class="fas fa-egg"></i>97%</div>
+            <div> 예매율 93.9%</div>
+          </div>
+          <div class="movies">
+            <img src="./images/movie2.jpg" width="170" height="230" alt="">
+            <h3>스파이더맨-노웨이홈</h3>
+            <div><i class="fas fa-egg"></i>97%</div>
+            <div> 예매율 93.9%</div>
+          </div>
+          <div class="movies">
+            <img src="./images/movie3.jpg" width="170" height="230" alt="">
+            <h3>스파이더맨-노웨이홈</h3>
+            <div><i class="fas fa-egg"></i>97%</div>
+            <div> 예매율 93.9%</div>
+          </div>
+          <div class="movies">
+            <img src="./images/movie4.jpg" width="170" height="230" alt="">
+            <h3>스파이더맨-노웨이홈</h3>
+            <div><i class="fas fa-egg"></i>97%</div>
+            <div> 예매율 93.9%</div>
+          </div>
+          <div class="movies">
+            <img src="./images/movie5.jpg" width="170" height="230" alt="">
+            <h3>스파이더맨-노웨이홈</h3>
+            <div><i class="fas fa-egg"></i>97%</div>
+            <div> 예매율 93.9%</div>
+          </div>
           <!-- <span><i class="fas fa-angle-right"></i></span> -->
         </div>
       </div>
+    </div>
+  </main>
+
+
+
+
+  <div class="main__event">
+    <div class="main__event--list">
+      <h1>Event</h1>
+    </div>
+    <div class="main__cinema">
+      <div class="main__cinema--list">
+        <h1>Special Cinema</h1>
       </div>
-    </main>
-
-
-
-
-    <div class="main__event">
-      <div class="main__event--list">
-        <h1>Event</h1>
+    </div>
+    <div class="main__goods">
+      <div class="main__goods--block">
+        <h1>Goods</h1>
       </div>
-      <div class="main__cinema">
-          <div class="main__cinema--list">
-              <h1>Special Cinema</h1>
+    </div>
+    <!-- 공지사항 -->
+    <div class="main__notice--block">
+      <div class="main__notice--wrap">
+        <div class="main__notice--main">
+          <div class="main__notice--content">
+            <div class="main__notice--board">
+              <p>공지사항</p>
+              <p class="text-line"><a href="#">[[기타]] 22년 VIP 선정 기준 변경 및 추가 기준 관련 안내</a></p>
+              <p><a href="#">더보기</a></p>
+            </div>
+            <div class="main__notice--service-info">
+              <div class="main__notice--service-client">
+                <dl>
+                  <dt>고객센터</dt>
+                  <dd>
+                    <p>
+                      1544-1122</p>
+                    <p>
+                      고객센터 운영시간 (평일 09:00~18:00) </p>
+                    <p>
+                      업무시간 외 자동응답 안내 가능합니다.
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+              <div class="main__notice--service-question">
+                <a href="#">FAQ</a>
+                <a href="#">1:1 문의</a>
+                <a href="#">분실물 문의</a>
+                <a href="#">대관/단체 문의</a>
+              </div>
+            </div>
           </div>
-      </div>
-      <div class="main__goods">
-          <div class="main__goods--block">
-              <h1>Goods</h1>
+          <div class="main__notice--qr">
+            <div class="app_explain-one">
+              <span>
+                앱 다운로드</span>
+              <p>CGV앱에서 더 편리하게 이용하세요</p>
+            </div>
+
+            <div>
+              <img class="qrimg" src="./images/img_qrcode.gif" alt="qrImg">
+            </div>
+            <div class="app_explain-two">
+              <span>
+                QR코드를 스캔하고</span>
+              <p>앱설치 페이지로 바로 이동하세요</p>
+            </div>
           </div>
-      </div>
-      <div class="main__notice">
-        <div class="main__notice--block">
-           <h5>공지사항</h5>
-           <p>[[극장]] 현대 모빌리티 아멕스카드 현대블루멤버스 포인트 사용 일부 제한 안내</p>
-           <a href="">더보기</a>
-           <h5>공지사항</h5>
-           <p>1544-1122
-             <br>고객센터 운영시간 (평일 09:00~18:00) 
-             <br>
-             업무시간 외 자동응답 안내 가능합니다.
-           </p>
-           <div class="main__notice--qna">
-             <a href="#">FAQ</a>
-             <a href="#">1:1문의</a>
-             <a href="#">분실물 문의</a>
-             <a href="#">대관/단체 문의</a>
-           </div>
         </div>
-        <div class="main__notice--qr"></div>
-        <div class="main__notice--swipeImg"></div>
+        <div class="main__notice--img">
+          <img src="./images/notice-img1.png" alt="notice-img1">
+          <!-- <img src="./images/notice-img2.png" alt="notice-img2"> -->
+          <!-- <i class="far fa-play-circle"></i> -->
+          <!-- <i class="far fa-pause-circle"></i> -->
+        </div>
       </div>
-      <footer class="main__footer">
-        <a  class="footer-img" href="#"><img src="./images/banner.png" alt=""></a> 
-        <div class="main__footer--content">
-          <div class="main__footer--list">
-            <ul>
-              <li>회사소개</li>
-              <li>
-                IR</li>
-              <li>채용정보</li>
-              <li>광고/제휴/출점문의
-              </li>
-              <li>이용약관</li>
-              <li>
-                편성기준</li>
-              <li id='important'>개인정보처리방침</li>
-              <li>법적고지</li>
-              <li>이메일주소무단수집거부
-              </li>
-              <li>윤리경영
-              </li>
-              <li>사이버감사실</li>
-            </ul>
-          </div>
+    </div>
+    <footer class="main__footer">
+      <a class="footer-img" href="#"><img src="./images/banner.png" alt=""></a>
+      <div class="main__footer--content">
+        <div class="main__footer--list">
+          <ul>
+            <li>회사소개</li>
+            <li>
+              IR</li>
+            <li>채용정보</li>
+            <li>광고/제휴/출점문의
+            </li>
+            <li>이용약관</li>
+            <li>
+              편성기준</li>
+            <li id='important'>개인정보처리방침</li>
+            <li>법적고지</li>
+            <li>이메일주소무단수집거부
+            </li>
+            <li>윤리경영
+            </li>
+            <li>사이버감사실</li>
+          </ul>
+        </div>
         <div class="main__footer--copyright">
-            <div class='main__footer--copyright--info'>
-             <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
-             <p>대표이사:
+          <div class='main__footer--copyright--info'>
+            <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
+            <p>대표이사:
               허민회 &middot;
               사업자등록번호:
               104-81-45690&middot;
               통신판매업신고번호:
-              2017-서울용산-0662 
+              2017-서울용산-0662
               <a href="">
-              사업자정보확인</a></p>
-              <p>호스팅사업자:
-                CJ올리브네트웍스&middot;
-                개인정보보호 책임자:
-                심준범&middot;
-                대표이메일:
-                cjcgvmaster@cj.net&middot;
-                고객센터:
-                1544-1122</p>
-                <p>&copy;CJ CGV. All Rights Reserved</p>
-            </div>
-            <div class="footer__shortcut--option"> 
-              <select name="" id="">
-                <option value="">계열사 바로가기</option>
-                <optgroup label='식품&식품서비스'>
-                  <option value="">CJ제일제당</option>
-                  <option value="">CJ푸드빌</option>
-                </optgroup>
-              </select>
-              <button class="option__shortcut--optionBtn">GO</button>
-            </div>
+                사업자정보확인</a>
+            </p>
+            <p>호스팅사업자:
+              CJ올리브네트웍스&middot;
+              개인정보보호 책임자:
+              심준범&middot;
+              대표이메일:
+              cjcgvmaster@cj.net&middot;
+              고객센터:
+              1544-1122</p>
+            <p>&copy;CJ CGV. All Rights Reserved</p>
+          </div>
+          <div class="footer__shortcut--option">
+            <select name="" id="">
+              <option value="">계열사 바로가기</option>
+              <optgroup label='식품&식품서비스'>
+                <option value="">CJ제일제당</option>
+                <option value="">CJ푸드빌</option>
+              </optgroup>
+            </select>
+            <button class="option__shortcut--optionBtn">GO</button>
           </div>
         </div>
-      </footer>
-  </body>
+      </div>
+    </footer>
+</body>
+
 </html>
