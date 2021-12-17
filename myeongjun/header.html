@@ -6,7 +6,7 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Dongle&display=swap" rel="stylesheet">    
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <style>
     a {
@@ -83,8 +83,8 @@
 
     .mainMenu{
         display: flex;
-        align-items: center;
-        width: 1000px;        
+        width: 1000px;
+        height: 400px;
         margin: 0 auto;
     }
 
@@ -93,14 +93,24 @@
         font-size: 30px;
         font-family: 'Dongle', sans-serif;
         cursor: pointer;
+        
+        
+        padding: 35px;
+        border-right: 1px solid black;
+        height: 330px;
     }
 
-    
+    .mainMenu__item > h2{
+        text-align: center;
+        color: slategray;      
+    }
+
     .serach {
         display: flex;
         width: 200px;
         height: 36px;
-        margin: 20px auto;        		
+        padding-left: 30px;
+        margin: 0px auto;        		
     }
 
     .serach > input {
@@ -112,8 +122,62 @@
         outline-style: none;
     }
 
+    .mainMenu__sub__item {
+        padding-top: 10px;
+    }
 
+    .mainMenu__sub__item:hover {
+        background: gray;
+    }
+
+    .showMenu{
+        display:flex;
+        width: 980px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .showMenu__item {
+        display: flex;
+        width: 980px;
+        margin: 0 auto;
+        align-items: center;     
+        justify-content: space-between; 
+    }
+
+    .showMenu__sub__item{        
+        font-size: 30px;
+        font-family: 'Dongle', sans-serif;        
+        cursor: pointer;
+        padding: 15px;        
+    }
+
+    .showMenu__item:last-child{
+        display: none;
+    }
 </style>
+
+
+<script>
+    $(function() {
+        $('.fullMenu').css('display','none');
+
+        $('.showMenu__sub__item').mouseenter(function () {
+            $('.fullMenu').css('display','flex');
+            $('.showMenu').css('display','none');
+        })
+
+        $('.fullMenu').mouseleave(function () {
+            $('.fullMenu').css('display','none');
+            $('.showMenu').css('display','flex');
+        })
+
+        $('.header').mouseenter(function () {
+            $('.fullMenu').css('display','none');
+            $('.showMenu').css('display','flex');
+        })
+    });
+</script>
 
 <body>
     <!-- 헤더 -->
@@ -153,27 +217,167 @@
 
     <hr>
 
+    <!-- Show Menu -->
+    <nav class="showMenu">
+        <ul class="showMenu__item">
+           <li class="showMenu__sub__item">영화</li>
+     
+           <li class="showMenu__sub__item">극장</li>
+    
+           <li class="showMenu__sub__item">예매</li>
    
-    <!--  메뉴 -->
-    <nav class="menu">
+           <li class="showMenu__sub__item">스토어</li>
+     
+           <li class="showMenu__sub__item">이벤트</li>
         
-        <ul class="mainMenu">
-            <li class="mainMenu__item" >영화</li>
-            <li class="mainMenu__item" >극장</li>
-            <li class="mainMenu__item" >예매</li>
-            <li class="mainMenu__item" >스토어</li>
-            <li class="mainMenu__item" >이벤트</li>
-            <li class="mainMenu__item" >혜택</li>
-
-            <div class="serach">
-                <input type="text">
-                <span class="iconify" data-icon="flat-color-icons:search" style="color: black; font-size: 36px;"></span>
-            </div>
+           <li class="showMenu__sub__item">혜택</li>                   
         </ul>
-
-       
+        <div class="serach">
+            <input type="text">
+            <span class="iconify" data-icon="flat-color-icons:search" style="color: black; font-size: 36px;"></span>
+        </div>
         
+    </nav>
+
+
+    <!-- Full Menu -->
+    <nav class="fullMenu">
+        <ul class="mainMenu">
+            <li class="mainMenu__item">
+                <h2>영화</h2>
+                <hr>
+                <ul class="mainMenu__sub">                
+                    
+                    <li class="mainMenu__sub__item">무비차트</li>
+                    <li class="mainMenu__sub__item">아트하우스</li>
+                    <li class="mainMenu__sub__item">ICECON</li>
+                </ul>
+            </li>
+            <li class="mainMenu__item">
+                <h2>극장</h2>
+                <hr>
+                <ul>            
+                <li class="mainMenu__sub__item">CGV극장</li>
+                <li class="mainMenu__sub__item">특별관</li>
+                </ul>
+            </li>
+            <li class="mainMenu__item">
+                <h2>예매</h2>
+                <hr>
+                <ul>                    
+                    <li class="mainMenu__sub__item">빠른예매</li>
+                    <li class="mainMenu__sub__item">상영스케줄</li>
+                    <li class="mainMenu__sub__item">English Ticketing</li>
+                    <li class="mainMenu__sub__item">English Schedule</li>
+                </ul>
+            </li>
+            <li class="mainMenu__item">
+                <h2>스토어</h2>
+                <hr>
+                <ul>                
+                    <li class="mainMenu__sub__item">영화관람권</li>
+                    <li class="mainMenu__sub__item">기프트카드</li>
+                    <li class="mainMenu__sub__item">콤보</li>
+                    <li class="mainMenu__sub__item">팝콘</li>
+                    <li class="mainMenu__sub__item">음료</li>
+                    <li class="mainMenu__sub__item">스낵</li>
+                    <li class="mainMenu__sub__item">플레이존</li>
+                    <li class="mainMenu__sub__item">씨네샵</li>
+                </ul>
+            </li>
+            <li class="mainMenu__item">
+                <h2>이벤트</h2>
+                <hr>
+                <ul>                    
+                    <li class="mainMenu__sub__item">SPECIAL</li>
+                    <li class="mainMenu__sub__item">영화/예매</li>
+                    <li class="mainMenu__sub__item">멤버십/CLUB</li>
+                    <li class="mainMenu__sub__item">CGV극장별</li>
+                    <li class="mainMenu__sub__item">제휴할인</li>
+                    <li class="mainMenu__sub__item">당첨자 발표</li>
+                    <li class="mainMenu__sub__item">종료된 이벤트</li>
+                </ul>
+            </li>
+            <li class="mainMenu__item">
+                <h2>혜택</h2>
+                <hr>
+                <ul>                    
+                    <li class="mainMenu__sub__item">CGV할인 정보</li>
+                    <li class="mainMenu__sub__item">CLUB 서비스</li>
+                    <li class="mainMenu__sub__item">VIP 라운지</li>
+                </ul>
+            </li>
+
+            
+        </ul>
     </nav> 
-    <hr>
+    <hr>    
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 </body>
 </html>
