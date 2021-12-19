@@ -27,11 +27,13 @@
   cursor: pointer;
   background-color: white;
   box-shadow: 1px 1px 1px 1px rgb(240, 240, 240);
+  padding-bottom: 2.5px;
 }
 
 .header__btn--stop > i {
   font-size: 0.8rem;
   opacity: 0.3;
+  margin-left: 1px;
 }
 
 .header__btn--text {
