@@ -19,27 +19,36 @@ h1 {
   align-items: center;
   height: 50px;
 }
-
 /* .main__screen__movie {
+  background-color: black;
+} */
+.main__screen__movie {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  height: 500px;
+  background-color: tomato;
+  /* height: 500px; */
   position: relative;
-} */
-
+}
+.main__screen__wrap--text-playbtn {
+  position: absolute;
+  /* color: white; */
+  left: 130px;
+}
+.main__screen--text {
+  color: white;
+}
 .fa-chevron-right {
   color: #666666;
   margin-left: 7px;
 }
-/* .main__screen--text {
-  height: 100px;
-  position: absolute;
-  bottom: 200px;
-  left: 200px;
-  color: white;
-} */
+.main__screen--text {
+  /* height: 100px; */
+  /* position: absolute; */
+  /* bottom: 200px; */
+  /* left: 200px; */
+  /* color: white; */
+}
 /* .main__screen--text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -95,50 +104,97 @@ h1 {
 } */
 
 .main__screen__moviechart--container {
-  border: 3px solid rebeccapurple;
-  /* width: 1034px; */
+  width: 1026px;
   justify-content: center;
+
   margin: 50px 120px;
 }
+
 .moviechart-nav {
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 15px; */
+  margin-bottom: 23px;
 }
-/* .moviechart-header {
-  display: flex;
-  font-size: 1.5rem;
-} */
+.moviechart-header a {
+  text-decoration: none;
+  color: black;
+}
+.moviechart-header h3:first-child {
+  padding-right: 20px;
+  border-right: 1px solid #e4e4e4;
+  font-weight: bold;
+}
+
+.moviechart-header h3:last-child {
+  padding-left: 20px;
+}
+.moviechart-header h3:last-child > a {
+  color: #666666;
+}
 
 .moviechart-header {
   display: flex;
   font-size: 1.5rem;
 }
+.moviechart-viewall {
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+  padding: 5px 5px 5px 16px;
+  box-shadow: 0.5px 1px #e6e6e6;
+}
+.moviechart-viewall > a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+.moviechart-viewall > .fa-angle-right {
+  color: #515151;
+  padding-left: 10px;
+}
+.movies {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movies img {
+  border-radius: 10px;
+}
+
+.movies h3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.fa-egg {
+  color: #ffc10e;
+  padding-right: 7px;
+}
+.movies div {
+  font-size: 13px;
+  color: #444444;
+}
+/* .movies  {
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 17px;
+  font-weight: bold;
+  width: 95%;
+} */
+
 .moviechart-list {
   display: flex;
   justify-content: space-between;
+  height: 300px;
 }
-/* .main__notice--block {
-  display: flex;
-} */
-/* .moviechart-header h3:first-child {
-  margin-right: 33px;
-} */
-/* .moviechart-nav a {
-  text-decoration: none;
-  color: black;
-} */
-/* .moviechart-list {
-  display: flex;
-  /* height: 310px; */
-/* border: 3px solid black; */
-/* justify-content: space-between; */
-/* }  */
+.movies > div span::before {
+  content: '|';
+  color: rgb(148, 148, 196);
+}
 
-/* .movies {
-  width: 170px;
-  border: 1px solid black;
-} */
 /* -----------공지사항----------------- */
 .main__notice--wrap {
   display: flex;
@@ -268,7 +324,7 @@ h1 {
 .fa-play-circle,
 .fa-pause-circle {
   font-size: 30px;
-  color: #d1d1d1;
+  color: #f6f6f6;
   position: absolute;
   bottom: 11px;
   right: 11px;
