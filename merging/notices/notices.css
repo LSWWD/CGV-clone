@@ -130,3 +130,15 @@
   margin-right: 10px;
   border-radius: 10px;
 }
+
+.notice-btn {
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  color: white;
+  background-color: #de981f;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+}

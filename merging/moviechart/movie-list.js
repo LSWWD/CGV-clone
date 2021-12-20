@@ -58,8 +58,8 @@ if (classList.clientWidth < liList.length * 216) {
 }
 
 //공지사항 이미지
-const pause = document.querySelector(".fa-pause-circle");
-const play = document.querySelector(".fa-pause-circle");
+const pauseBtn = document.querySelector(".notice-btn");
+let btnToggle = true;
 
 const imgBox = document.querySelector(".main__notice--img");
 const img = document.querySelector(".notice-img");
@@ -75,17 +75,16 @@ function changeImg() {
     imgIdx = 0;
   }
 }
-let intervalIdx = setInterval(changeImg, 2000);
-
-function pausePlayImg() {
-  if (pause.className === "far fa-pause-circle") {
-    pause.className = "far fa-play-circle";
+const repeatIdx = () => setInterval(changeImg, 2000);
+let intervalIdx = repeatIdx();
+pauseBtn.addEventListener("click", () => {
+  toggle = !toggle;
+  if (toggle === true) {
+    pauseBtn.innerHTML = '<i class="far fa-pause-circle"></i>';
     clearInterval(intervalIdx);
-  } else if (play.className === "far fa-play-circle") {
-    play.className = "far fa-pause-circle";
-    intervalIdx = setInterval(changeImg, 2000);
+    intervalIdx = repeatIdx();
+  } else {
+    pauseBtn.innerHTML = '<i class="far fa-play-circle"></i>';
+    clearInterval(intervalIdx);
   }
-}
-
-pause.addEventListener("click", pausePlayImg);
-play.addEventListener("click", pausePlayImg);
+});
