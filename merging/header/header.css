@@ -133,7 +133,7 @@ hr {
   display: flex;
 
   /* 가로 가운데 정렬*/
-  width: 980px;
+  width: 100%;
   margin: 0 auto;
 
   /*세로 가운데 정렬*/
@@ -143,6 +143,7 @@ hr {
   background: white;
   position: sticky;
   top: 0;
+  z-index: 5;
 
   /* 줄바꿈 방지 */
   white-space: nowrap;
@@ -150,6 +151,7 @@ hr {
 
 .showMenu__item {
   display: flex;
+  justify-content: space-evenly;
   width: 980px;
   margin: 0 auto;
   align-items: center;
@@ -167,6 +169,7 @@ hr {
   top: 0;
   border-bottom: solid 1px black;
   background: white;
+  z-index: 5;
 }
 
 .showMenuHr {
