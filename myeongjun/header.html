@@ -7,177 +7,9 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Dongle&display=swap" rel="stylesheet">    
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="header.css">
+    <script src="header.js"></script>
 </head>
-<style>
-    a {
-        color: black;
-
-         /* 밑줄 제거 */
-        text-decoration: none;
-    }
-
-    hr {
-        margin: 0;
-    }
-   
-    .header {
-         /* flex는 inline (default) */
-        display: flex;
-
-        /* .header__logo 와 .header__link 사이 빈칸 생성 */
-        justify-content: space-between;
-        
-        /* .header__logo 와 .header__link 세로 정렬 */
-        align-items: center;
-
-        /* .header에 해당되는 요소의 넓이를 고정 */
-        width: 980px;
-
-        /* 
-        margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 0px;
-        margin-left: auto;
-        오른쪽, 왼쪽을 고정된 width 기준으로 마진을 늘려줌
-        */
-        margin: 0 auto;
-
-        /*
-        padding-top: 20px;
-        padding-right: 30px;
-        padding-bottom: 20px;
-        padding-left: 30px;
-        */
-        padding: 20px 30px;
-    }
-
-    /* 로고 옆 글자 */
-    .header__logo::after {
-        content: 'CULTUREPLEX';
-        font-family: 'Dokdo', cursive;
-        letter-spacing: 0.3em;
-    }
-
-    /* 로그인, 회원가입, My CGV, 고객센터 스타일 시작 */
-    .header__link > ul{
-        display: flex;
-        list-style: none;
-        margin: 0px;
-    }
-
-    .header__link__item {
-        width: 80px;
-        text-align: center;
-        cursor: pointer;
-        margin: 0;
-        font-size: 17px;
-        font-family: 'Dongle', sans-serif;
-    }
-
-    .header__link__item > .iconify {
-        color: black;
-        font-size: 36px;
-    }
-    /* 로그인, 회원가입, My CGV, 고객센터 스타일 종료 */
-
-
-    .mainMenu{
-        display: flex;
-        width: 1000px;
-        height: 400px;
-        margin: 0 auto;
-    }
-
-    .mainMenu__item{
-        margin: 0px auto;
-        font-size: 30px;
-        font-family: 'Dongle', sans-serif;
-        cursor: pointer;
-        
-        
-        padding: 35px;
-        border-right: 1px solid black;
-        height: 330px;
-    }
-
-    .mainMenu__item > h2{
-        text-align: center;
-        color: slategray;      
-    }
-
-    .serach {
-        display: flex;
-        width: 200px;
-        height: 36px;
-        padding-left: 30px;
-        margin: 0px auto;        		
-    }
-
-    .serach > input {
-        border: none;
-        border-bottom: solid 2px black;
-    }
-
-    .serach > input:focus{
-        outline-style: none;
-    }
-
-    .mainMenu__sub__item {
-        padding-top: 10px;
-    }
-
-    .mainMenu__sub__item:hover {
-        background: gray;
-    }
-
-    .showMenu{
-        display:flex;
-        width: 980px;
-        margin: 0 auto;
-        align-items: center;
-    }
-
-    .showMenu__item {
-        display: flex;
-        width: 980px;
-        margin: 0 auto;
-        align-items: center;     
-        justify-content: space-between; 
-    }
-
-    .showMenu__sub__item{        
-        font-size: 30px;
-        font-family: 'Dongle', sans-serif;        
-        cursor: pointer;
-        padding: 15px;        
-    }
-
-    .showMenu__item:last-child{
-        display: none;
-    }
-</style>
-
-
-<script>
-    $(function() {
-        $('.fullMenu').css('display','none');
-
-        $('.showMenu__sub__item').mouseenter(function () {
-            $('.fullMenu').css('display','flex');
-            $('.showMenu').css('display','none');
-        })
-
-        $('.fullMenu').mouseleave(function () {
-            $('.fullMenu').css('display','none');
-            $('.showMenu').css('display','flex');
-        })
-
-        $('.header').mouseenter(function () {
-            $('.fullMenu').css('display','none');
-            $('.showMenu').css('display','flex');
-        })
-    });
-</script>
 
 <body>
     <!-- 헤더 -->
@@ -214,8 +46,8 @@
             </ul>
         </div>
     </header>
-
     <hr>
+    
 
     <!-- Show Menu -->
     <nav class="showMenu">
@@ -235,9 +67,11 @@
         <div class="serach">
             <input type="text">
             <span class="iconify" data-icon="flat-color-icons:search" style="color: black; font-size: 36px;"></span>
-        </div>
-        
+        </div>    
+            
     </nav>
+    
+    <div class="showMenuHr"></div>
 
 
     <!-- Full Menu -->
@@ -246,8 +80,7 @@
             <li class="mainMenu__item">
                 <h2>영화</h2>
                 <hr>
-                <ul class="mainMenu__sub">                
-                    
+                <ul class="mainMenu__sub">                                    
                     <li class="mainMenu__sub__item">무비차트</li>
                     <li class="mainMenu__sub__item">아트하우스</li>
                     <li class="mainMenu__sub__item">ICECON</li>
@@ -307,77 +140,9 @@
                     <li class="mainMenu__sub__item">VIP 라운지</li>
                 </ul>
             </li>
-
-            
         </ul>
+        
     </nav> 
-    <hr>    
-
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
 </body>
 </html>
