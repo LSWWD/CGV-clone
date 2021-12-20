@@ -1,7 +1,6 @@
 const slideNextList = document.querySelector('.slide-next');
 //ul태그 선택
 let classList = slideNextList.parentElement.nextElementSibling;
-
 let liList = classList.getElementsByTagName('li');
 
 function transformPrev(event) {
@@ -40,7 +39,7 @@ function transformNext(event) {
   if (classList.clientWidth < liList.length * 216 + Number(activeLi)) {
     activeLi = Number(activeLi) - 216 * 5; //왼쪽으로 이동
 
-    if (classList.clientWidth > liList.length * 216 + Number(activeLi)) {
+    if (Number(activeLi) === -1080) {
       slideNext.classList.remove('slide-next-hover');
       slideNext.removeEventListener('click', transformNext);
     }
@@ -57,8 +56,33 @@ if (classList.clientWidth < liList.length * 216) {
   slideNextList.classList.add('slide-next-hover');
   slideNextList.addEventListener('click', transformNext);
 }
-// else {
-//   let arrowContainer = slideNextList.parentElement;
-//   arrowContainer.removeChild(slideNextList.previousElementSibling);
-//   arrowContainer.removeChild(slideNextList);
-// }
+
+//공지사항 이미지
+const pause = document.querySelector('.fa-pause-circle');
+const play = document.querySelector('.fa-pause-circle');
+
+const imgBox = document.querySelector('.main__notice--img');
+const img = document.querySelector('.notice-img');
+const imgArray = ['./images/notice-img1.png', './images/notice-img2.png'];
+let imgIdx = 0;
+function changeImg() {
+  img.setAttribute('src', imgArray[imgIdx]);
+  imgIdx++;
+  if (imgIdx >= imgArray.length) {
+    imgIdx = 0;
+  }
+}
+let intervalIdx = setInterval(changeImg, 2000);
+
+function pausePlayImg() {
+  if (pause.className === 'far fa-pause-circle') {
+    pause.className = 'far fa-play-circle';
+    clearInterval(intervalIdx);
+  } else if (play.className === 'far fa-play-circle') {
+    play.className = 'far fa-pause-circle';
+    intervalIdx = setInterval(changeImg, 2000);
+  }
+}
+
+pause.addEventListener('click', pausePlayImg);
+play.addEventListener('click', pausePlayImg);
