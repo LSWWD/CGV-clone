@@ -1,0 +1,9 @@
+@import "./reset.css";
+@import "./mainscreen/style.css";
+@import "./screenevent/events.css";
+@import "./header/header.css";
+@import "./specialty/style.css";
+@import "./goods/style.css";
+@import "./moviechart/style.css";
+@import "./notices/notices.css";
+@import "./footers/footer.css";

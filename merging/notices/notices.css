@@ -1,0 +1,132 @@
+/* -----------공지사항----------------- */
+.main__notice--wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 426px;
+}
+.main__notice--main {
+  border: 2px solid #e4e4e4;
+  border-radius: 10px;
+  display: flex;
+  margin-right: 30px;
+}
+.main__notice--content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 28px 26px 39px 28px;
+  border-right: 1px solid #e4e4e4;
+}
+
+.main__notice--board {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  justify-content: space-between;
+  text-align: center;
+}
+.main__notice--board a {
+  color: black;
+  text-decoration: none;
+}
+.main__notice--board > p:first-child {
+  font-weight: bold;
+}
+
+.main__notice--service-info {
+  margin-top: 20px;
+}
+
+.text-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  width: 60%;
+}
+.main__notice--board p:last-child {
+  font-size: 12px;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+  padding: 4px 15px 4px 15px;
+}
+
+/* 고객센터 */
+.main__notice--service-client {
+  padding: 13px 0;
+}
+.main__notice--service-client dt {
+  margin-right: 26px;
+  font-weight: bold;
+}
+.main__notice--service-client p {
+  font-size: 14px;
+}
+.main__notice--service-client p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.main__notice--service-client p:last-child {
+  margin-top: 10px;
+  color: #666666;
+}
+/* -------고객센터---- */
+.main__notice--service-client {
+  margin-bottom: 20px;
+}
+
+.main__notice--service-question a {
+  text-decoration: none;
+  color: black;
+  background-color: #f6f6f6;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+/* qr박스 */
+.main__notice--qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 12px 22px 24px 22px;
+}
+
+.app_explain-two {
+  color: #666666;
+}
+/* 고객센터 */
+.main__notice--service-client dl {
+  display: flex;
+}
+
+.app_explain-one > span {
+  font-weight: bold;
+}
+.app_explain-one > p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.app_explain-two {
+  font-size: 12px;
+  line-height: 20px;
+}
+.qrimg {
+  width: 70px;
+  height: auto;
+}
+.main__notice--img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* overflow: hidden; */
+  position: relative;
+  width: 235px;
+  height: 260px;
+}
+
+.notice-img {
+  margin-right: 10px;
+  border-radius: 10px;
+}

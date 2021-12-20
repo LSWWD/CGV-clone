@@ -15,7 +15,6 @@ eventSlide.style.width = `${eventContainer.clientWidth * eventBoxes.length}px`;
 
 // 오른쪽 넘기기 버튼
 rightBtn.addEventListener("click", () => {
-  console.log("click");
   boxIndex++;
   boxIndex = boxIndex >= eventBoxes.length ? eventBoxes.length - 1 : boxIndex;
   eventSlide.style.marginLeft = `-${eventContainer.clientWidth * boxIndex}px`;
@@ -31,7 +30,6 @@ rightBtn.addEventListener("click", () => {
 
 //왼쪽 넘기기 버튼
 leftBtn.addEventListener("click", () => {
-  console.log("click");
   boxIndex--;
   boxIndex = boxIndex < 0 ? 0 : boxIndex;
   eventSlide.style.marginLeft = `-${eventContainer.clientWidth * boxIndex}px`;
@@ -60,7 +58,6 @@ stopBtn.addEventListener("click", () => {
 // 반복할 애니메이션 설정
 const roller = () => {
   boxIndex++;
-  console.log(boxIndex);
   boxIndex = boxIndex >= eventBoxes.length ? 0 : boxIndex;
   eventSlide.style.marginLeft = `-${eventContainer.clientWidth * boxIndex}px`;
 

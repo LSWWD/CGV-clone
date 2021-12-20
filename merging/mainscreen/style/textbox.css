@@ -56,7 +56,7 @@
   text-align: center;
 }
 
-.main__screen__box--btn button {
+.main__screen__box--btn > button {
   font-size: 1.5rem;
   margin-left: 12px;
 }
