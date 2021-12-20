@@ -1,0 +1,78 @@
+.main__screen__box {
+  width: 330px;
+  height: 180px;
+}
+
+.main__screen__box--title {
+  width: 330px;
+  height: 60px;
+}
+
+.main__screen__box--title span {
+  font-size: 38px;
+  font-weight: 800;
+  color: whitesmoke;
+  text-shadow: 2px 3px 4px black;
+}
+
+.main__screen__box--text {
+  width: 330px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-shadow: 2px 3px 4px black;
+}
+
+.main__screen__box--text span {
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+.main__screen__box--btn {
+  width: 330px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.main__screen__box--btn > div {
+  background-color: #d0cfce;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.5;
+}
+
+.main__screen__box--btn > div > i {
+  font-size: 15px;
+  opacity: 0.7;
+}
+.main__screen__box--btn > div > span {
+  font-size: 15px;
+  text-align: center;
+}
+
+.main__screen__box--btn button {
+  font-size: 1.5rem;
+  margin-left: 12px;
+}
+
+#play {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#volume {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}

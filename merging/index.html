@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mainscreen/style.css" />
+    <link rel="stylesheet" href="./screenevent/events.css" />
+    <title>CGV Clone</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__screen">
+        <div class="main__screen__box">
+          <div class="main__screen__box--title">
+            <span>해피 뉴 이어</span>
+          </div>
+          <div class="main__screen__box--text">
+            <span>우리에게도 소중한 인연이 찾아올까요?</span>
+            <span>티빙과 극장에서 12월 29일 대공개!</span>
+          </div>
+          <div class="main__screen__box--btn">
+            <div>
+              <span>상세보기</span>
+              <i class="fas fa-greater-than"></i>
+            </div>
+            <button id="play"><i class="far fa-pause-circle"></i></button>
+            <button id="volume"><i class="fas fa-volume-down"></i></button>
+          </div>
+        </div>
+      </div>
+      <video src="./mainscreen/movie.mp4" width="1170px" autoplay></video>
+    </div>
+    <div class="event">
+      <div class="event__box">
+        <button class="event__box__btn" id="left-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="event__box__btn" id="right-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="event__box__header">
+          <div class="event__box__header__text"><span>EVENT</span></div>
+          <div class="event__box__header__btn">
+            <button class="header__btn--stop" id="stop-btn">
+              <i class="fas fa-pause"></i>
+            </button>
+            <button class="header__btn--text">
+              <span>전체보기</span><i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="event__box__outer">
+          <div class="event__box__outer__slide">
+            <div class="event__box__container">
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img1-1.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[킹스맨: 퍼스트 에이전트]CGV 필름마크</span>
+                  <span>2021.12.15 ~ 2022.01.09</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img1-2.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[매트릭스: 리저렉션]CGV 필름마크</span>
+                  <span>2021.12.15~2031.01.09</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img1-3.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[스파이더맨:노 웨이홈] 4DX 리미티드 포스터</span>
+                  <span>2021.12.09~2021.12.31</span>
+                </div>
+              </div>
+            </div>
+            <div class="event__box__container">
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img2-1.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>모.든.요.일 2D 영화 ⭐ 6천원 할인 ⭐</span>
+                  <span>2021.12.13~2031.12.13</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img2-2.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>수험생 청소년을 위한 [스피드 무비 파이터]</span>
+                  <span>2021.11.17~2021.12.20</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img2-3.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[스파이더맨: 노 웨이 홈] 4DX 리미티드 포스터</span>
+                  <span>2021.11.17~2021.12.20</span>
+                </div>
+              </div>
+            </div>
+            <div class="event__box__container">
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img3-1.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[스파이더맨: 노 웨이 홈]개봉작 사용설명서</span>
+                  <span>2021.12.14 ~ 2022.01.09</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img3-2.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[엔칸토: 마법의 세계] 스페셜 리미티드 포스터</span>
+                  <span>2021.12.13~2031.12.13</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img3-3.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[스파이더맨: 노 웨이 홈]CGV 필름마크</span>
+                  <span>2021.12.08 ~ 2022.01.02</span>
+                </div>
+              </div>
+            </div>
+            <div class="event__box__container">
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img4-1.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[몬스타엑스: 더 드리밍] 포토플레이 시크릿 컷</span>
+                  <span>2021.12.02 ~ 2022.01.02</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img4-2.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>2022 CGV 캘린더론칭!!</span>
+                  <span>2021.11.19~2031.12.31</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img4-3.png" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[백신패스관] 운영 가이드</span>
+                  <span>2021.12.15~2031.12.15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./mainscreen/screen.js"></script>
+  <script src="./screenevent/events.js"></script>
+  <script
+    src="https://kit.fontawesome.com/c4c0c87d90.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
