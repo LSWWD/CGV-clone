@@ -25,3 +25,5 @@ cineDechef.addEventListener("mouseover", () => {
   suitePicture.innerHTML =
     '<div class="picture"><img src="./image1/cine de chef.png" alt=""></div>';
 });
+
+
