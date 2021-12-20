@@ -51,51 +51,196 @@
           </div>
           <div class="moviechart-viewall"><a href="#">전체보기</a><i class="fas fa-angle-right"></i></div>
         </div>
-        <!-- 무비차트 리스트 -->
-        <div class="moviechart-list">
-          <!-- <span><i class="fas fa-chevron-left"></i></span> -->
-          <div class="movies">
-            <img src="./images/movie1.jpg" width="170" height="230" alt="">
-            <h3>스파이더맨-노웨이홈</h3>
-            <div><i class="fas fa-egg"></i>97%
-              <span>
-                예매율 93.9%</span>
-            </div>
-          </div>
-          <div class="movies">
-            <img src="./images/movie2.jpg" width="170" height="230" alt="">
-            <h3>유체이탈자</h3>
-            <div><i class="fas fa-egg"></i>97%
-              <span>
-                예매율 93.9%</span>
-            </div>
-          </div>
-          <div class="movies">
-            <img src="./images/movie3.jpg" width="170" height="230" alt="">
-            <h3>아네트</h3>
-            <div><i class="fas fa-egg"></i>97%
-              <span>
-                예매율 93.9%</span>
-            </div>
-          </div>
-          <div class="movies">
-            <img src="./images/movie4.jpg" width="170" height="230" alt="">
-            <h3>리슨</h3>
-            <div><i class="fas fa-egg"></i>97%
-              <span>
-                예매율 93.9%</span>
-            </div>
-          </div>
-          <div class="movies">
-            <img src="./images/movie5.jpg" width="170" height="230" alt="">
-            <h3>파워 오브 </h3>
-            <div><i class="fas fa-egg"></i>97%
-              <span>
-                예매율 93.9%</span>
-            </div>
-          </div>
-          <!-- <span><i class="fas fa-angle-right"></i></span> -->
+
+        <div class='arrow-container'>
+          <i class="fas fa-chevron-left slide-prev"></i>
+          <i class="fas fa-chevron-right slide-next"></i>
         </div>
+        <ul class="moviechart-list" data-position='0'>
+
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie1.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                스파이더맨-노 웨이 홈
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie2.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                유체이탈자
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 90.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie3.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                아네트
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>30%</div>
+                <div class="movie-ticketing">예매율 1.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie4.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                리슨
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>50%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie5.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                파워 오브 도그
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>80%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie6.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                신의 손
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie7.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                디어 에반 핸슨
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie8.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                티탄
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie9.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                엔칸토-마법의 세계
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./images/movie10.jpg" alt="" class='movie-img backoverlay'>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                프렌치 디스패치
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
       </div>
     </div>
   </main>
@@ -231,5 +376,6 @@
       </div>
     </footer>
 </body>
+<script src='movie-list.js'></script>
 
 </html>
