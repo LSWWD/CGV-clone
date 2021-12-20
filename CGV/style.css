@@ -31,30 +31,35 @@
   background-color: darkgreen;
   height: 263px;
   width: 500px;
+  overflow: hidden;
 }
 
 .picture1 > img {
   height: 263px;
   width: 500px;
-  position: absolute;
+  z-index: 4;
+  display: none;
 }
 
 .picture2 > img {
   height: 263px;
   width: 500px;
-  position: absolute;
+  z-index: 3;
+  display: none;
 }
 
 .picture3 > img {
   height: 263px;
   width: 500px;
-  position: absolute;
+  z-index: 2;
+  display: none;
 }
 
 .picture4 > img {
   height: 263px;
   width: 500px;
-  position: absolute;
+  z-index: 1;
+  display: none;
 }
 
 .special {
