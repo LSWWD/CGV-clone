@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dokdo&family=Dongle&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="https://img.cgv.co.kr/theater_img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>CGV Clone</title>
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header__logo">
+        <a href="/"
+          ><img
+            src="https://img.cgv.co.kr/R2014/images/common/logo/logoRed.png"
+            alt="CGV_logo"
+            size="50px"
+            height="53"
+            width="117"
+        /></a>
+      </div>
+      <div class="header__link">
+        <ul>
+          <a href="/">
+            <li class="header__link__item">
+              <span class="iconify" data-icon="ph:lock-key-open-bold"></span>
+              <p>로그인</p>
+            </li>
+          </a>
+          <a href="/">
+            <li class="header__link__item">
+              <span
+                class="iconify"
+                data-icon="icon-park-outline:people-plus-one"
+              ></span>
+              <p>회원가입</p>
+            </li>
+          </a>
+          <a href="/">
+            <li class="header__link__item">
+              <span class="iconify" data-icon="icon-park-outline:people"></span>
+              <p>MY CGV</p>
+            </li>
+          </a>
+          <a href="/">
+            <li class="header__link__item">
+              <span class="iconify" data-icon="healthicons:call-centre"></span>
+              <p>고객센터</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </header>
+    <hr />
+
+    <!-- Show Menu -->
+    <nav class="showMenu">
+      <ul class="showMenu__item">
+        <li class="showMenu__sub__item">영화</li>
+
+        <li class="showMenu__sub__item">극장</li>
+
+        <li class="showMenu__sub__item">예매</li>
+
+        <li class="showMenu__sub__item">스토어</li>
+
+        <li class="showMenu__sub__item">이벤트</li>
+
+        <li class="showMenu__sub__item">혜택</li>
+      </ul>
+      <div class="serach">
+        <input type="text" />
+        <span
+          class="iconify"
+          data-icon="flat-color-icons:search"
+          style="color: black; font-size: 36px"
+        ></span>
+      </div>
+    </nav>
+
+    <div class="showMenuHr"></div>
+
+    <!-- Full Menu -->
+    <nav class="fullMenu">
+      <ul class="mainMenu">
+        <li class="mainMenu__item">
+          <h2>영화</h2>
+          <hr />
+          <ul class="mainMenu__sub">
+            <li class="mainMenu__sub__item">무비차트</li>
+            <li class="mainMenu__sub__item">아트하우스</li>
+            <li class="mainMenu__sub__item">ICECON</li>
+          </ul>
+        </li>
+        <li class="mainMenu__item">
+          <h2>극장</h2>
+          <hr />
+          <ul>
+            <li class="mainMenu__sub__item">CGV극장</li>
+            <li class="mainMenu__sub__item">특별관</li>
+          </ul>
+        </li>
+        <li class="mainMenu__item">
+          <h2>예매</h2>
+          <hr />
+          <ul>
+            <li class="mainMenu__sub__item">빠른예매</li>
+            <li class="mainMenu__sub__item">상영스케줄</li>
+            <li class="mainMenu__sub__item">English Ticketing</li>
+            <li class="mainMenu__sub__item">English Schedule</li>
+          </ul>
+        </li>
+        <li class="mainMenu__item">
+          <h2>스토어</h2>
+          <hr />
+          <ul>
+            <li class="mainMenu__sub__item">영화관람권</li>
+            <li class="mainMenu__sub__item">기프트카드</li>
+            <li class="mainMenu__sub__item">콤보</li>
+            <li class="mainMenu__sub__item">팝콘</li>
+            <li class="mainMenu__sub__item">음료</li>
+            <li class="mainMenu__sub__item">스낵</li>
+            <li class="mainMenu__sub__item">플레이존</li>
+            <li class="mainMenu__sub__item">씨네샵</li>
+          </ul>
+        </li>
+        <li class="mainMenu__item">
+          <h2>이벤트</h2>
+          <hr />
+          <ul>
+            <li class="mainMenu__sub__item">SPECIAL</li>
+            <li class="mainMenu__sub__item">영화/예매</li>
+            <li class="mainMenu__sub__item">멤버십/CLUB</li>
+            <li class="mainMenu__sub__item">CGV극장별</li>
+            <li class="mainMenu__sub__item">제휴할인</li>
+            <li class="mainMenu__sub__item">당첨자 발표</li>
+            <li class="mainMenu__sub__item">종료된 이벤트</li>
+          </ul>
+        </li>
+        <li class="mainMenu__item">
+          <h2>혜택</h2>
+          <hr />
+          <ul>
+            <li class="mainMenu__sub__item">CGV할인 정보</li>
+            <li class="mainMenu__sub__item">CLUB 서비스</li>
+            <li class="mainMenu__sub__item">VIP 라운지</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!--  메인 영화 예고편 스크린-->
+    <div class="main">
+      <div class="main__screen">
+        <div class="main__screen__box">
+          <div class="main__screen__box--title">
+            <span>해피 뉴 이어</span>
+          </div>
+          <div class="main__screen__box--text">
+            <span>우리에게도 소중한 인연이 찾아올까요?</span>
+            <span>티빙과 극장에서 12월 29일 대공개!</span>
+          </div>
+          <div class="main__screen__box--btn">
+            <div>
+              <span>상세보기</span>
+              <i class="fas fa-greater-than"></i>
+            </div>
+            <button id="play"><i class="far fa-pause-circle"></i></button>
+            <button id="volume"><i class="fas fa-volume-down"></i></button>
+          </div>
+        </div>
+      </div>
+      <video src="./mainscreen/movie.mp4" width="1170px" autoplay></video>
+    </div>
+    <!-- 무비차트 -->
+    <div class="main__screen__moviechart">
+      <div class="main__screen__moviechart--container">
+        <!-- 무비차트 네비게이션바 -->
+        <div class="moviechart-nav">
+          <div class="moviechart-header">
+            <h3><a href="#">무비 차트</a></h3>
+            <h3><a href="#">상영예정작</a></h3>
+          </div>
+          <div class="moviechart-viewall"><a href="#">전체보기</a><i class="fas fa-angle-right"></i></div>
+        </div>
+
+        <div class='arrow-container'>
+          <i class="fas fa-chevron-left slide-prev"></i>
+          <i class="fas fa-chevron-right slide-next"></i>
+        </div>
+        <ul class="moviechart-list" data-position='0'>
+
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie1.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">1</div>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                스파이더맨-노 웨이 홈
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie2.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">2</div>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                유체이탈자
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 90.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie3.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">3</div>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                아네트
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>30%</div>
+                <div class="movie-ticketing">예매율 1.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie4.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">4</div>
+
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                리슨
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>50%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie5.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">5</div>
+
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                파워 오브 도그
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>80%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie6.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">6</div>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                신의 손
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie7.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">7</div>
+
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                디어 에반 핸슨
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie8.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">8</div>
+
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                티탄
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie9.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">9</div>
+
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                엔칸토-마법의 세계
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+          <li class="movie-card">
+            <div class="overlaywrap">
+              <div class='movie__card-overlay'>
+                <div class="overlay-detailview">상세보기</div>
+                <div class="overlay-ticketing">예매하기</div>
+                <img src="./moviechart/images/movie10.jpg" alt="" class='movie-img backoverlay'>
+                <div class="num">10</div>
+              </div>
+            </div>
+            <div class="movie-info">
+              <div class="movie-title">
+                프렌치 디스패치
+              </div>
+              <div class="movie-detail">
+                <div class="movie-socre"><i class="fas fa-egg"></i>97%</div>
+                <div class="movie-ticketing">예매율 93.9%</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+    <div class="event">
+      <div class="event__box">
+        <button class="event__box__btn" id="left-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="event__box__btn" id="right-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="event__box__header">
+          <div class="event__box__header__text"><span>EVENT</span></div>
+          <div class="event__box__header__btn">
+            <button class="header__btn--stop" id="stop-btn">
+              <i class="fas fa-pause"></i>
+            </button>
+            <button class="header__btn--text">
+              <span>전체보기</span><i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="event__box__outer">
+          <div class="event__box__outer__slide">
+            <div class="event__box__container">
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img1-1.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[킹스맨: 퍼스트 에이전트]CGV 필름마크</span>
+                  <span>2021.12.15 ~ 2022.01.09</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img1-2.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[매트릭스: 리저렉션]CGV 필름마크</span>
+                  <span>2021.12.15~2031.01.09</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img1-3.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[스파이더맨:노 웨이홈] 4DX 리미티드 포스터</span>
+                  <span>2021.12.09~2021.12.31</span>
+                </div>
+              </div>
+            </div>
+            <div class="event__box__container">
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img2-1.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>모.든.요.일 2D 영화 ⭐ 6천원 할인 ⭐</span>
+                  <span>2021.12.13~2031.12.13</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img2-2.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>수험생 청소년을 위한 [스피드 무비 파이터]</span>
+                  <span>2021.11.17~2021.12.20</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img2-3.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[스파이더맨: 노 웨이 홈] 4DX 리미티드 포스터</span>
+                  <span>2021.11.17~2021.12.20</span>
+                </div>
+              </div>
+            </div>
+            <div class="event__box__container">
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img3-1.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[스파이더맨: 노 웨이 홈]개봉작 사용설명서</span>
+                  <span>2021.12.14 ~ 2022.01.09</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img3-2.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[엔칸토: 마법의 세계] 스페셜 리미티드 포스터</span>
+                  <span>2021.12.13~2031.12.13</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img3-3.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[스파이더맨: 노 웨이 홈]CGV 필름마크</span>
+                  <span>2021.12.08 ~ 2022.01.02</span>
+                </div>
+              </div>
+            </div>
+            <div class="event__box__container">
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img4-1.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[몬스타엑스: 더 드리밍] 포토플레이 시크릿 컷</span>
+                  <span>2021.12.02 ~ 2022.01.02</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img4-2.jpg" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>2022 CGV 캘린더론칭!!</span>
+                  <span>2021.11.19~2031.12.31</span>
+                </div>
+              </div>
+              <div class="event__box__container__content">
+                <div class="event__box__container__content--img">
+                  <img src="./screenevent/img/img4-3.png" alt="" />
+                </div>
+                <div class="event__box__container__content--text">
+                  <span>[백신패스관] 운영 가이드</span>
+                  <span>2021.12.15~2031.12.15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "specialty">
+      <div class="menu">
+          <div class="special">특별관</div>
+          <div class="whole"><span>전체보기</span><i class="fas fa-greater-than"></i></div>
+      </div>
+      
+      <div class="content">
+      <div class="suite-picture">
+<div class="picture"><img src="./specialty/image1/suite cinema.png" alt=""></div>
+
+      </div>
+      
+      <div class="type">    
+      
+          <div class="suite-cinema">
+          <div class="suite-cinema1"><strong>SUITE CINEMA</strong></div>
+          <div class="suite-cinema2">#호텔 컨셉의 프리미엄관</div>
+          </div>
+     
+          <div class="sky-box">
+          <div class="sky-box1"><strong>SKY BOX</strong></div>
+          <div class="sky-box2">#Premium #Private</div>
+          </div>
+      
+          <div class="DX">
+          <div class="DX1"> <strong>4DX</strong></div>
+          <div class="DX2">#모션시트 #오감체험</div>
+      </div>
+      
+      <div class="cine-de-chef">
+          <div class="chef1"><strong>CINE-de-CHEF</strong></div>
+          <div class="chef2">#쉐프가 있는 영화관</div>
+
+      </div>
+      </div>
+
+  </div>
+  <div class="whole-goods">
+    <div class="inner-whole">
+<div class="a">
+<div class="JBOX">
+<div><strong>영화관람권</strong></div>
+    <div class="more-see1">더보기</div>
+    </div>
+    <div class="ABOX">
+        <div class="PICTURE1"><img src="./goods/image2/CGV영화관람권.jpg" alt=""></div>
+        <div class="wrap1">
+        <span>CGV영화관람권</span> 
+        <span><strong>11,000원</strong></span></div>
+    </div>
+
+    <div class="BBOX">
+        <div class="PICTURE2"><img src="./goods/image2/CGV골드클래스.jpg" alt=""></div>
+        <div class="wrap2">
+        <span>골드클래스</span> <span><strong>35,000원</strong></span></div>
+    </div>
+    <div class="CBOX">
+        <div class="PICTURE3"><img src="./goods/image2/4DX관람권.jpg" alt=""></div>
+        <div class="wrap3">
+       <span>4DX관람권</span> <span><strong>19,000원</strong></span></div>
+    </div>
+</div>
+<div class="b">
+<div class="KBOX">
+<div><strong>기프트카드</strong></div>
+<div class="more-see2">더보기</div>
+</div>
+    <div class="DBOX">
+        <div class="PICTURE4"><img src="./goods/image2/A형.jpg" alt=""></div>
+        <div class="wrap4">
+        <span>PACONNIE A형</span> <sapn><strong>금액충전형</strong></sapn></div>
+    </div>
+    <div class="EBOX">
+        <div class="PICTURE5"><img src="./goods/image2/B형.jpg" alt=""></div>
+        <div class="wrap5">
+        <span>PACONNIE B형</span> <sapn><strong>금액충전형</strong></sapn></div>
+    </div>
+    <div class="FBOX">
+        <div class="PICTURE6"><img src="./goods/image2/C형.jpg" alt=""></div>
+        <div class="wrap6">
+        <span>PACONNIE C형</span> <span><strong>금액충전형</strong></span></div>
+    </div>
+
+</div>
+<div class="c">
+<div class="LBOX">
+<div><strong>콤보</strong></div>
+<div class="more-see3">더보기</div>
+</div>
+    <div class="GBOX">
+        <div class="PICTURE7"><img src="./goods/image2/CGV콤보.jpg" alt=""></div>
+        <div class="wrap7">
+        <span>CGV콤보</span> <span><strong>9,000원</strong></span></div>
+    </div>
+    <div class="HBOX">
+        <div class="PICTURE8"><img src="./goods/image2/더블콤보.jpg" alt=""></div>
+        <div class="wrap8">
+        <span>더블콤보</span> <span><strong>12,000원</strong></span></div>
+    </div>
+    <div class="IBOX">
+        <div class="PICTURE9"><img src="./goods/image2/스몰센트.jpg" alt=""></div>
+        <div class="wrap9">
+        <span>스몰세트</span> <span><strong>6,500원</strong></span></div>
+    </div>
+</div>
+
+</div>
+</div>
+<!-- 공지사항 -->
+<div class="main__notice--block">
+  <div class="main__notice--wrap">
+    <div class="main__notice--main">
+      <div class="main__notice--content">
+        <div class="main__notice--board">
+          <p>공지사항</p>
+          <p class="text-line"><a href="#">[[기타]] 22년 VIP 선정 기준 변경 및 추가 기준 관련 안내</a></p>
+          <p><a href="#">더보기</a></p>
+        </div>
+        <div class="main__notice--service-info">
+          <div class="main__notice--service-client">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <p>
+                  1544-1122</p>
+                <p>
+                  고객센터 운영시간 (평일 09:00~18:00) </p>
+                <p>
+                  업무시간 외 자동응답 안내 가능합니다.
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <div class="main__notice--service-question">
+            <a href="#">FAQ</a>
+            <a href="#">1:1 문의</a>
+            <a href="#">분실물 문의</a>
+            <a href="#">대관/단체 문의</a>
+          </div>
+        </div>
+      </div>
+      <div class="main__notice--qr">
+        <div class="app_explain-one">
+          <span>
+            앱 다운로드</span>
+          <p>CGV앱에서 더 편리하게 이용하세요</p>
+        </div>
+
+        <div>
+          <img class="qrimg" src="./notices/images/img_qrcode.gif" alt="qrImg">
+        </div>
+        <div class="app_explain-two">
+          <span>
+            QR코드를 스캔하고</span>
+          <p>앱설치 페이지로 바로 이동하세요</p>
+        </div>
+      </div>
+    </div>
+    <div class="main__notice--img">
+      <button class= "notice-btn"><i class="far fa-pause-circle"></i></button>
+      <img src="./notices/images/notice-img1.png" alt="notice-img1" class="notice-img">
+    </div>
+  </div>
+</div>
+<footer class="main__footer">
+  <a class="footer-img" href="#"><img src="./notices/images/banner.png" alt=""></a>
+  <div class="main__footer--content">
+    <div class="main__footer--list">
+      <ul>
+        <li>회사소개</li>
+        <li>
+          IR</li>
+        <li>채용정보</li>
+        <li>광고/제휴/출점문의
+        </li>
+        <li>이용약관</li>
+        <li>
+          편성기준</li>
+        <li id='important'>개인정보처리방침</li>
+        <li>법적고지</li>
+        <li>이메일주소무단수집거부
+        </li>
+        <li>윤리경영
+        </li>
+        <li>사이버감사실</li>
+      </ul>
+    </div>
+    <div class="main__footer--copyright">
+      <div class='main__footer--copyright--info'>
+        <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
+        <p>대표이사:
+          허민회 &middot;
+          사업자등록번호:
+          104-81-45690&middot;
+          통신판매업신고번호:
+          2017-서울용산-0662
+          <a href="">
+            사업자정보확인</a>
+        </p>
+        <p>호스팅사업자:
+          CJ올리브네트웍스&middot;
+          개인정보보호 책임자:
+          심준범&middot;
+          대표이메일:
+          cjcgvmaster@cj.net&middot;
+          고객센터:
+          1544-1122</p>
+        <p>&copy;CJ CGV. All Rights Reserved</p>
+      </div>
+      <div class="footer__shortcut--option">
+        <select name="" id="">
+          <option value="">계열사 바로가기</option>
+          <optgroup label='식품&식품서비스'>
+            <option value="">CJ제일제당</option>
+            <option value="">CJ푸드빌</option>
+          </optgroup>
+        </select>
+        <button class="option__shortcut--optionBtn">GO</button>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+  <script src="./mainscreen/screen.js"></script>
+  <script src="./screenevent/events.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"
+  ></script>
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  <script src="./header/header.js"></script>
+<script src="./specialty/script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/c4c0c87d90.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./moviechart/movie-list.js"></script>
+</html>
