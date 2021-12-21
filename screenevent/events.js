@@ -26,6 +26,13 @@ rightBtn.addEventListener("click", () => {
     //인터벌 다시 할당
     replay = repeat();
   }
+  // 넘기기 시 특정 화면에서 버튼 비활성화
+  if (boxIndex > 0) {
+    leftBtn.style.visibility = "visible";
+  }
+  if (boxIndex >= eventBoxes.length - 1) {
+    rightBtn.style.visibility = "hidden";
+  }
 });
 
 //왼쪽 넘기기 버튼
@@ -38,6 +45,13 @@ leftBtn.addEventListener("click", () => {
   } else {
     clearInterval(replay);
     replay = repeat();
+  }
+  // 넘기기 시 특정 화면에서 버튼 비활성화
+  if (boxIndex === 0) {
+    leftBtn.style.visibility = "hidden";
+  }
+  if (boxIndex < eventBoxes.length - 1) {
+    rightBtn.style.visibility = "visible";
   }
 });
 
