@@ -24,3 +24,8 @@ CGV Clone
 5. 결과 확인
 	> 프로젝트 발표 이틀 전에 각자의 코딩을 중단하고 그 동안 진행 했던 것들을 병합하여 하나의   
 	> 결과물로 구현하여 전체적인 리뷰를 통해 구현에 미흡한 부분을 확인하고 보완할 방법들을 논의 했습니다.
+
+### 1. 레이 아웃 작성
+- 준비물   
+[CGV 홈페이지](https://cgv.co.kr/), [Page Ruler Redux](https://chrome.google.com/webstore/detail/page-ruler-redux/giejhjebcalaheckengmchjekofhhmal?hl=ko), HTML, CSS, [Oven](https://ovenapp.io)
+ - 결과물
