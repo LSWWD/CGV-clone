@@ -28,4 +28,13 @@ CGV Clone
 ### 1. 레이 아웃 작성
 - 준비물   
 [CGV 홈페이지](https://cgv.co.kr/), [Page Ruler Redux](https://chrome.google.com/webstore/detail/page-ruler-redux/giejhjebcalaheckengmchjekofhhmal?hl=ko), HTML, CSS, [Oven](https://ovenapp.io)
- - 결과물
+ - 과정
+	> 1. cgv 홈페이지에 접속
+	> 2. page ruler redux를 이용해 각 부분별 크기 측정
+	> 3. 부분별로 이름을 지정해 클래스 네임 생성
+	> 4. oven이나 css를 이용해 각 부분들의 구성요소 확인
+
+- 이유
+	> 최외곽 클래스이름을 지정하고 구성요소를 구분함으로써 병합 시 충돌 최소화
+- 결과물   
+[레이아웃](https://cottony-property-595.notion.site/8314531d329b492793d0197f28a05c26), layout폴더
