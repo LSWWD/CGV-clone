@@ -1,5 +1,7 @@
 CGV Clone
 =====
+[CGV Clone Notion Link](https://www.notion.so/3-de3707e2ced544d58811ac28e8c5fb2a)
+=====
 ### 기획의도
 > 수업에서 배운 내용을 통해 다양한 화면 구성을 구현해 볼 필요성을 느끼고, 수업에서 배운   
 > 내용들을 숙지할 필요성도 느껴 다양한 화면구성이 있는 기존에 만들어진 웹사이트를 구현   
@@ -92,3 +94,13 @@ CGV Clone
 #### Footer
 	- 각자의 요소가 원래 페이지와 똑같은 위치에 있을 것
 	- 계열사 바로가기 클릭 시 계열사 목록이 보일 것
+
+### 3. 문제점 파악
+> 프로젝트를 진행한 인원들이 겪은 문제점은 이름에 있는 노션링크로 들어가셔서 확인할 수 있습니다.   
+
+
+#### [명준](https://www.notion.so/ba7d990121524b6a9e2b55dd2b80316b) - Header & Menu(=Nav)
+#### [수연](https://www.notion.so/fd776a924d62438789773677599229d4) - MovieChart & Notice & Footer
+#### [인수](https://www.notion.so/6f41d2618bb44725a1439ce356d0d526) - MainScreen & Event
+#### [경민](https://www.notion.so/5f35f93acab34ce3bdb6430142d4443b) - Special Cinema & Goods
+
